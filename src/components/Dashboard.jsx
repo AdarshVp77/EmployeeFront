@@ -67,7 +67,6 @@ const Dashboard = () => {
         </div>
       ) : (
         <div>
-         
           <TableContainer component={Paper} style={{ marginTop: "20px" }}>
             <Table sx={{ minWidth: 650 }}>
               <TableHead style={{ backgroundColor: "#333" }}>
@@ -170,43 +169,39 @@ const Dashboard = () => {
                       style={{ color: "white", fontSize: "16px" }}
                       align="center"
                     >
-                   <button
-  style={{
-    backgroundColor: '#135D66', 
-    color: 'white', 
-    border: 'none',
-    padding: '8px 16px', 
-    cursor: 'pointer', 
-    borderRadius: '4px', 
-    fontSize: '14px', 
-    transition: 'background-color 0.3s ease', 
-  }}
-  onClick={() => handleUpdate(row._id)}
->
-  Edit
-</button>
-
+                      <button
+                        style={{
+                          backgroundColor: "#135D66",
+                          color: "white",
+                          border: "none",
+                          padding: "6px 14px",
+                          cursor: "pointer",
+                          borderRadius: "6px",
+                          fontSize: "15px",
+                        }}
+                        onClick={() => handleUpdate(row._id)}
+                      >
+                        Edit
+                      </button>
                     </TableCell>
                     <TableCell
                       style={{ color: "white", fontSize: "16px" }}
                       align="center"
                     >
-                     <button
-  style={{
-    backgroundColor: '#dc3545', 
-    color: 'white', 
-    border: 'none', 
-    padding: '8px 16px', 
-    cursor: 'pointer', 
-    borderRadius: '4px', 
-    fontSize: '14px', 
-    transition: 'background-color 0.3s ease', 
-  }}
-  onClick={() => handleDelete(row._id)}
->
-  Delete
-</button>
-
+                      <button
+                        style={{
+                          backgroundColor: "#dc3545",
+                          color: "white",
+                          border: "none",
+                          padding: "6px 14px",
+                          cursor: "pointer",
+                          borderRadius: "6px",
+                          fontSize: "15px",
+                        }}
+                        onClick={() => handleDelete(row._id)}
+                      >
+                        Delete
+                      </button>
                     </TableCell>
                   </TableRow>
                 ))}
