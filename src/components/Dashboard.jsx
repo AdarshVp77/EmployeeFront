@@ -171,7 +171,7 @@ const Dashboard = () => {
                     >
                       <button
                         style={{
-                          backgroundColor: "#135D66",
+                          backgroundColor: "#7fcf0e",
                           color: "white",
                           border: "none",
                           padding: "6px 14px",
@@ -190,7 +190,7 @@ const Dashboard = () => {
                     >
                       <button
                         style={{
-                          backgroundColor: "#dc3545",
+                          backgroundColor: "#33cf1e",
                           color: "white",
                           border: "none",
                           padding: "6px 14px",
