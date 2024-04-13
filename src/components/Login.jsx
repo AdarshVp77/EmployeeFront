@@ -34,7 +34,10 @@ const Login = () => {
     e.preventDefault();
     if (validateLogin()) {
       axios
-        .post("https://emp-fhhr.onrender.com/employees/login", { username, password })
+        .post("https://emp-fhhr.onrender.com/employees/login", {
+          username,
+          password,
+        })
         .then((result) => {
           console.log(result);
           if (result.data === "success") {
@@ -70,29 +73,27 @@ const Login = () => {
                 id="password"
                 label="Password"
                 fullWidth
-                type="password" 
+                type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </Grid>
           </Grid>
           <Button
-  type="submit"
-  variant="contained"
-  style={{
-    margin: "20px auto",
-    display: "block",
-    backgroundColor: "#1C1678", 
-    color: "#FFFFFF", 
-   
-  }}
->
-  Login
-</Button>
-
+            type="submit"
+            variant="contained"
+            style={{
+              margin: "20px auto",
+              display: "block",
+              backgroundColor: "#1C1678",
+              color: "#FFFFFF",
+            }}
+          >
+            Login
+          </Button>
         </form>
         {error && <p style={{ color: "red", textAlign: "center" }}>{error}</p>}
-        <p style={{textAlign:"center"}}>If you are new here, Register  </p>
+        <p style={{ textAlign: "center" }}>If you are new here, Register </p>
         <Button
           variant="contained"
           style={{ margin: "20px auto", display: "block" }}
@@ -101,12 +102,15 @@ const Login = () => {
             Register
           </Link>
         </Button>
-        <p style={{textAlign:"center"}}>Admin?  </p>
+        <p style={{ textAlign: "center" }}>Admin? </p>
         <Button
           variant="contained"
           style={{ margin: "20px auto", display: "block" }}
         >
-          <Link to="/admin/login" style={{ color: "white", textDecoration: "none" }}>
+          <Link
+            to="/admin/login"
+            style={{ color: "white", textDecoration: "none" }}
+          >
             Admin Login
           </Link>
         </Button>

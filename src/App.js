@@ -13,7 +13,6 @@ import Home from "./components/Home";
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Routes>
         <Route path={"/"} element={<Login />}></Route>
         <Route path={"/admin/login"} element={<AdminLogin />}></Route>
